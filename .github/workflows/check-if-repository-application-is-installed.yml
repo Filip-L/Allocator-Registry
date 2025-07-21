@@ -66,6 +66,7 @@ jobs:
           if [[ -n "$invalid_files" ]]; then
             echo ""
             echo -e "::warning title=Invalid or Missing GitHub URLs::The following files have missing or invalid allocation_bookkeeping GitHub URLs:\n$invalid_files"
+            exit 1
           fi
 
           echo ""
