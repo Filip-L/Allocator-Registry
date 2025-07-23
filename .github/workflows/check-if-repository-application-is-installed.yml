@@ -11,7 +11,7 @@ jobs:
   check-repo-installation:
     runs-on: ubuntu-latest
     env:
-      BACKEND_URL: https://api.staging.allocator.tech
+      BACKEND_URL: https://api.allocator.tech
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
